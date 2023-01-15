@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let person = {
+				name: {
+					first: '太郎',
+					last: '独習'
+				},
+				age: 18,
+			}
+
+			console.log(person['age']);
+			console.log(person['name']['last']);
+
+			person['name']['last'] = '次郎';
+			person['gender'] = '男';
+			person['family'] = { wifi: '花子', child: '三郎'}
+			console.log(person);
+
+			const keyBase = 'member';
+			const member = {
+				[`${keyBase}1`]: '太郎',
+				[`${keyBase}2`]: '次郎',
+			}
+			console.log(member);
+			// console.log(member[`${keyBase}1`]);
+			// console.log(member[keyBase + '2']);
+		</script>
+	</body>
+</html>
