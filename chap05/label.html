@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = ['a', 'b', 'c'];
+        const num = [10, 20, 30];
+
+        alphabet:
+        for (let i = 0; i < str.length; i++) {
+            numeric:
+            for (let j = 0; j < num.length; j++) {
+                if (str[i] === 'b' && num[j] === 30) {
+                    break alphabet;
+                }
+                console.trace(`アルファベット： [ ${str[i]}, 数値： [${num[j]}] ]`);
+            }
+        }
+    </script>
+</body>
+</html>

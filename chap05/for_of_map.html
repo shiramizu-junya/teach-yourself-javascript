@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const map = new Map();
+        map.set('apple', 'りんご');
+        map.set('banana', 'バナナ');
+
+        for (const row of map) {
+            console.log(row[0], row[1]);
+        }
+    </script>
+</body>
+</html>

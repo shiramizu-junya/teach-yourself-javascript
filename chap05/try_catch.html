@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try {
+            notExistingFunction(); // 例外発生
+            console.log('例外により、これは実行されません');
+        } catch(error) {
+            console.error('例外が発生しました');
+            console.error(error);
+            console.error(error.name);
+            console.error(error.message);
+        }finally {
+            console.log('finalyブロックは必ず実行される');
+        }
+
+        console.log('例外が発生しても後続のコードが実行される');
+    </script>
+</body>
+</html>
